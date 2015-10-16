@@ -15,7 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 /**
- *
+ * Based on:  http://outbottle.com/spring-4-web-mvc-hello-world-using-annotation-configuration-with-netbeans/
+ * 
  * @author alejandro
  */
 @Configuration
@@ -34,6 +35,6 @@ public class Configuracion extends WebMvcConfigurerAdapter{
     
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/resources/*");
+        registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/resources/");
     }
 }
