@@ -21,4 +21,10 @@ public class DefaultController {
        map.put("msg", "Hello Spring 4 Web MVC!");
        return "index";
    }
+   
+   @RequestMapping(value = "/*", method = RequestMethod.GET)
+   public String startP(ModelMap map) {
+
+       return "login";
+   }
 }
